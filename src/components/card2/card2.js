@@ -1,10 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import image from './download.jpeg'
 function BasicExample() {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={image} />
+      <img src={image}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>

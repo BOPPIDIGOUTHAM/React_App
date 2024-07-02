@@ -1,4 +1,7 @@
-const ButtonComponent=()=>{
-    return<button>click me</button> ;
+export const ButtonComponent=()=>{
+    return(
+    <button on onClick={()=>{}}className="" >
+        click me
+        </button>) ;
 };
-export default ButtonComponent;
+// export default ButtonComponent;
