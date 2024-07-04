@@ -1,17 +1,13 @@
  const ImageComponent = (props) => {
-    
-    return(
-     <div>
-
-
-<img src={props.src}
-
-      width={100}
-       height={100} 
-       alt="nature"/>
+    const {src,width,height,alt }=props
+    return <img 
+    src={src}
+      width={width} 
+      height={height}
+       alt={alt}/>
 
         
-     </div>
-    );
-};
+     
+    
+ };
 export default ImageComponent;
