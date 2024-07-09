@@ -1,8 +1,9 @@
 
- export const Heading1=(prop)=>{
+  const Heading1=(prop)=>{
     const {title}=prop;
     return <h1>{title}</h1>;
 };
+export default Heading1;
 
 export const Heading2=()=>{
     

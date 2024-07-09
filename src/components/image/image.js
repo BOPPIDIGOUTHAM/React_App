@@ -1,13 +1,8 @@
  const ImageComponent = (props) => {
+  console.log(props,"prop");
     const {src,width,height,alt }=props
-    return <img 
-    src={src}
-      width={width} 
-      height={height}
-       alt={alt}/>
+    return <img {...props} />
 
-        
      
-    
- };
+     };
 export default ImageComponent;
