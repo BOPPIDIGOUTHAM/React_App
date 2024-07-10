@@ -7,7 +7,7 @@ export default Heading1;
 
 export const Heading2=()=>{
     
-    return <h2>hello react</h2>;
+    return <h2> hello react</h2>;
 };
  export const Heading3 =(prop)=>{
     const {title}=prop;
@@ -22,6 +22,10 @@ export const Heading5=()=>{
     return <h5>hello react</h5>;
 };
 
-export const Heading6=()=>{
-    return <h6>hello react</h6>;
+export const Heading6=(prop)=>{
+    console.log(prop,"prop")
+    const{children}=prop
+    return (
+       <p> {children}</p>
+    );
 };
