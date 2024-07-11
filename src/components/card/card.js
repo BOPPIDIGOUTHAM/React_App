@@ -1,13 +1,19 @@
- import ImageComponent from "../image/image"
- import { Heading1 } from "../headings/headings"
- import ButtonComponent from "../button/button"
- import { ListParentOrdered } from "../list/list"
+//  import ImageComponent from "./component/image/image"
+//  import { Heading1 } from "./component/headings/headings"
+//  import ButtonComponent from "./component/button/button"
+
+import Heading1 from "../headings/headings";
+
+//  import { ListParentOrdered } from "./component/list/list"
    const Card=()=>{
-    return <div>
-<Heading1/>
-<ImageComponent/>
-<ListParentOrdered/>
-<ButtonComponent/>
-    </div>
+    return(
+     <>
+{/* <Heading1/> */}
+{/* <ImageComponent/> */}
+{/* <ListParentOrdered/> */}
+{/* <ButtonComponent/> */}
+<Heading1 title="I am heading"/>
+    </>
+    );
 };
  export default Card;
