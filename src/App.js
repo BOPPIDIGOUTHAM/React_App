@@ -1,11 +1,19 @@
 // import { useState } from "react"
 import FoodProvider from "./components/contextapi/food";
 import UseReducer2 from "./components/useReducer/useReducer"
-function App(){
+import UncontrolledComponent from "./components/usememo/useRef/useref";
+function App(){ 
+  
+
   return (
+
     <>
+
     {/* <FoodProvider/> */}
-    <UseReducer2/>
+    {/* <UseReducer2/> */}
+    <UncontrolledComponent/>
+
+
     </>
   )
 }
