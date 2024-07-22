@@ -1,21 +1,15 @@
-// import { useState } from "react"
-import FoodProvider from "./components/contextapi/food";
-import UseReducer2 from "./components/useReducer/useReducer"
-import UncontrolledComponent from "./components/usememo/useRef/useref";
-function App(){ 
-  
+// src/App.js
+import React from 'react';
+import './App.css';
+import UsersList from './components/userListGroupTask/userList';
+// import UsersList from './components/UsersList';
 
+function App() {
   return (
-
-    <>
-
-    {/* <FoodProvider/> */}
-    {/* <UseReducer2/> */}
-    <UncontrolledComponent/>
-
-
-    </>
-  )
+    <div className="App">
+      <UsersList/>
+    </div>
+  );
 }
- 
-export default App;
+
+export default App;
