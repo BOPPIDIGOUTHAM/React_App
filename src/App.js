@@ -1,13 +1,10 @@
-// src/App.js
 import React from 'react';
-import './App.css';
-import UsersList from './components/userListGroupTask/userList';
-// import UsersList from './components/UsersList';
+import Weather from './components/weather/weather';
 
 function App() {
   return (
-    <div className="App">
-      <UsersList/>
+    <div>
+      <Weather />
     </div>
   );
 }
