@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 
 const RecipeData = () => {
   const [data, setData] = useState([]);
@@ -26,7 +27,7 @@ const RecipeData = () => {
 
   return (
     <div>
-      <button class="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"style={{marginLeft:"450px"}} ><h1 style={{color:"green",}}>RECIPES MENU</h1></button>
+      <button style={{marginLeft:"450px"}} ><h1 style={{color:"green",}}>RECIPES MENU</h1></button>
       <input 
         type="text" 
         placeholder="Search recipes..." 
@@ -55,7 +56,7 @@ const RecipeData = () => {
             <Card.Body>
               <Card.Title>{e.name}</Card.Title>
               <Link to={`/recipe/${e.id}`}>
-                <button class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Click</button>
+                <button>Click</button>
               </Link>
             </Card.Body>
           </Card>
